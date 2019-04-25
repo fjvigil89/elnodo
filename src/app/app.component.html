@@ -1,3 +1,36 @@
-<router-outlet></router-outlet>
+<mat-toolbar >
+    <mat-toolbar-row>
+        <span class="example-spacer"></span>
+        <a mat-button routerLink="servicio">
+            <h3>Services</h3>
+        </a>
+        <hr>
+        <a mat-button routerLink="lared">
+            <h3> La Red</h3>
+        </a>
+        <hr>
+        <a mat-button routerLink="informacion">
+            <h3> Información</h3>
+        </a>
+        <hr>
+        <a mat-button routerLink="" active=true>
+            <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon"> account_balance
+            </mat-icon>
+        </a>
+        <hr>
+        <a mat-button routerLink="regulaciones">
+            <h3>Regulaciones</h3>
+        </a>
+        <hr>
+        <a mat-button routerLink="noticias">
+            <h3>Noticias</h3>
+        </a>
+        <hr>
+        <a mat-button routerLink="contacto">
+            <h3>Contacto</h3>
+        </a>
 
-<app-toolbar></app-toolbar>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

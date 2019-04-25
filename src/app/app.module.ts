@@ -8,17 +8,21 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 //Material
 import { MaterialModule } from "./Material/materialModule";
 import { ToolbarComponent } from './toolbar/toolbar.component';
-
+import { ServiciosComponent } from './servicios/servicios.component';
+//rutas
+import { AppRoutersModule } from './app.routers'
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

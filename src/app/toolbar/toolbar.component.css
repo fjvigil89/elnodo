@@ -1,0 +1,93 @@
+.contenido{
+    position: relative;    
+    text-align: center;
+    width: 100%;
+}
+.textaux{
+    position: relative;    
+    text-align: center;    
+    top: 20%;
+    left: 5%; 
+ 
+}
+.texto-cabecera-centrado{
+    position: absolute;
+    top: 20%;
+    left: 35%;    
+    z-index: 5;
+    white-space: nowrap;
+    font-size: 40px; 
+    line-height: 42px; 
+    font-weight: 250; 
+    color: rgba(255, 255, 255, 1.00);
+    font-family:Fira Sans;
+    text-align:center;
+    
+}
+
+.texto-centrado{
+    position: absolute;
+    top: 25%;
+    left: 17%;    
+    z-index: 6; 
+    min-width: 673px; 
+    max-width: 873px;     
+    white-space: pre-wrap; 
+    font-size: 20px; 
+    line-height: 22px; 
+    font-weight: 500; 
+    color: rgba(255, 255, 255, 1.00);
+    text-align:center;
+    width: 100%;
+}
+
+.pie-texto{
+    position: absolute;
+    top: 45%;
+    left: 37%;
+    z-index: 7; 
+    min-width: 373px; 
+    max-width: 373px; 
+    max-width: 55px; 
+    max-width: 55px; 
+    white-space: normal; 
+    font-size: 16px; 
+    line-height: 18px; 
+    font-weight: 400; 
+    color: rgba(26, 58, 0, 1.00);
+    text-align:center;
+
+}
+.pie-texto2{
+    position: absolute;
+    top: 83%;
+    left: 27%;
+    z-index: 7; 
+    min-width: 573px; 
+    max-width: 473px; 
+    max-width: 55px; 
+    max-width: 55px; 
+    white-space: normal; 
+    font-size: 16px; 
+    line-height: 18px; 
+    font-weight: 400; 
+    color: rgba(26, 58, 0, 1.00);
+    text-align:center;
+}
+
+.vc_cta3-content{
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    z-index: 7; 
+    min-width: 673px; 
+    max-width: 373px; 
+    max-width: 55px; 
+    max-width: 55px; 
+    white-space: normal; 
+    font-size: 16px; 
+    line-height: 18px; 
+    font-weight: 400; 
+    color: rgba(26, 58, 0, 1.00);
+    text-align:center;
+}
