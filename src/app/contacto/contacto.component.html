@@ -1,5 +1,23 @@
-<div class="container"> 
-<p>
-  contacto works!
-</p>
+<div class="container">   
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row" *ngFor="let upr of upredes">
+          <div class="col-md-6">
+            {{ upr.title }}
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<button type="button" class="btn btn-outline-secondary btn-rounded waves-effect">Secondary</button>
 </div>

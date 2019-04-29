@@ -1,18 +1,20 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { Upredes } from '../interface/upredes';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactoService {
+  
+  headers = new HttpHeaders();
 
   constructor( private httpClient: HttpClient) { 
-    console.log("desde service");
+    //console.log("desde service");
   }
 
   getData(){
-    return this.httpClient.get<Upredes[]>('upr');
+    return this.httpClient.get<Upredes[]>('http://sync.upr.edu.cu/api/user/frank.vigil');
   }
 }

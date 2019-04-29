@@ -13,16 +13,18 @@
 }
 .texto-cabecera-centrado{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 35%;    
     z-index: 5;
     white-space: nowrap;
+    
     font-size: 40px; 
     line-height: 42px; 
     font-weight: 250; 
     color: rgba(255, 255, 255, 1.00);
     font-family:Fira Sans;
     text-align:center;
+    
     
 }
 
@@ -40,6 +42,7 @@
     color: rgba(255, 255, 255, 1.00);
     text-align:center;
     width: 100%;
+    
 }
 
 .pie-texto{

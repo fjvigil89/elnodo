@@ -1,3 +1,3 @@
 export interface Upredes{
-    'nombre': string;
+    'title': string;
 }

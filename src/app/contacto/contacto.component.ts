@@ -12,6 +12,7 @@ export class ContactoComponent implements OnInit {
   constructor( private constactoService: ContactoService ) { 
     this.constactoService.getData().subscribe(data =>{
       console.log(data);
+      this.upredes = data;
     });
   }
 

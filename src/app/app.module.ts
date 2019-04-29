@@ -16,10 +16,13 @@ import { AppRoutersModule } from './app.routers';
 // Servicios
 import { ContactoService } from './contacto/contacto.service';
 
+
+
 // Componentes Propios
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { AlertModule } from 'ngx-bootstrap/alert';
 
 
 @NgModule({
@@ -34,8 +37,9 @@ import { ContactoComponent } from './contacto/contacto.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule,
-    AppRoutersModule
+    //MaterialModule,
+    AppRoutersModule,
+    AlertModule.forRoot()
   ],
   providers: [ContactoService],
   bootstrap: [AppComponent]
