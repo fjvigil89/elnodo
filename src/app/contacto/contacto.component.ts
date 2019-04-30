@@ -10,7 +10,7 @@ export class ContactoComponent implements OnInit {
 
   upredes = [];
   constructor( private constactoService: ContactoService ) { 
-    this.constactoService.getData().subscribe(data =>{
+     this.constactoService.getData().subscribe(data =>{
       console.log(data);
       this.upredes = data;
     });

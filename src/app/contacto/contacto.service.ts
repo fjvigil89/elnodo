@@ -15,6 +15,6 @@ export class ContactoService {
   }
 
   getData(){
-    return this.httpClient.get<Upredes[]>('http://sync.upr.edu.cu/api/user/frank.vigil');
+    return this.httpClient.get<Upredes[]>('');
   }
 }
