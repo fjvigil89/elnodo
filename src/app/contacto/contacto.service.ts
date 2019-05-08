@@ -8,13 +8,16 @@ import { Upredes } from '../interface/upredes';
 })
 export class ContactoService {
   
-  headers = new HttpHeaders();
+  httheaders = new HttpHeaders({
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*'});
+  
 
   constructor( private httpClient: HttpClient) { 
     //console.log("desde service");
   }
 
   getData(){
-    return this.httpClient.get<Upredes[]>('');
+    return this.httpClient.get<Upredes[]>('http://sync.upr.edu.cu/api/user/frank.vigil');
   }
 }

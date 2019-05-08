@@ -1,15 +1,25 @@
   
-<div>
+<div class="container">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="row" >
-          <div class="col-md-3" *ngFor="let item of [1,2,3,4,5]">
-            <img src="../assets/Ident-New.jpg" alt="UPR" width="50px" height="40px">
-          </div>          
+          <div *ngFor="let item of [1,2,3,4,5,6,7]">
+              <div class="col-md-3">  
+                  <div class="card" style=" text-align: center; width: 15rem; margin-top: 20px; border: oldlace; ">
+                    <img src="../assets/frank-green.jpg" alt="UPR" class="rounded-circle card-img-top">                
+                    <div class="card-body">
+                      <h5 class="card-title">FRANK JOSUÉ VIGIL VEGA</h5>
+                      <p class="card-text blockquote-footer">SERVICIOS
+                      </p>
+                    </div>                                    
+                  </div>               
+              </div> 
+          </div>
         </div>
       </div>
     </div>
   </div>
-<button type="button" class="btn btn-outline-secondary btn-rounded waves-effect">Secondary</button>
 </div>
+
+ 
