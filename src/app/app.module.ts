@@ -23,6 +23,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
+import { LaredComponent } from './lared/lared.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AlertModule } from 'ngx-bootstrap/alert';
     AppComponent,
     ToolbarComponent,
     ServiciosComponent,
-    ContactoComponent
+    ContactoComponent,
+    LaredComponent
   ],
   imports: [
     BrowserModule,

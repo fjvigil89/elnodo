@@ -1,4 +1,4 @@
-#myCarousel .carousel-item .mask {
+  #myCarousel .carousel-item .mask {
     position: absolute;
     top: 0;
 	left:0;
@@ -19,17 +19,10 @@
 	margin-bottom:15px;
 	color:#d5d5d5;
 }
-#myCarousel .carousel-item a{
-  font-size:14px;   
-  color:#FFF; 
-  padding:13px 32px; 
-  display:inline-block; 
-}
+#myCarousel .carousel-item a{background:#F47735; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
+#myCarousel .carousel-item a:hover{background:#394fa2; text-decoration:none;  }
 
-
-#myCarousel .carousel-item h4{
-  -webkit-animation-name:fadeInLeft; 
-  animation-name:fadeInLeft;} 
+#myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
 #myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
 #myCarousel .carousel-item a{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
 #myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; height:auto; max-width:100%;}
@@ -40,21 +33,21 @@
 }
 #myCarousel .container {max-width: 1430px;  }
 #myCarousel .carousel-item{height:100%; min-height:550px; }
-#myCarousel{position:relative; z-index:1; background:url(http://localhost:4200/assets/2880x1800_32-4.jpg) center center no-repeat; background-size:cover; height: 500px; }
+#myCarousel{position:relative; z-index:1; background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat; background-size:cover; }
 
-.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #ffffff00; }
+.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #f47735; }
 
 
 .carousel-item {
     position: relative;
-    /*display: none;*/
+    display: none;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
     transition: -webkit-transform .6s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease,-webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-perspective: 1000px;
@@ -62,8 +55,8 @@
 }
 .carousel-fade .carousel-item {
 	opacity: 0;
-	-webkit-transition-duration: .7s;
-	transition-duration: .7s;
+	-webkit-transition-duration: .6s;
+	transition-duration: .6s;
 	-webkit-transition-property: opacity;
 	transition-property: opacity
 }
