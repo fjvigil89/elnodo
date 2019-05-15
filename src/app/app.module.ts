@@ -24,6 +24,9 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { LaredComponent } from './lared/lared.component';
+import { FooterComponent } from './footer/footer.component';
+import { PrincipalComponent } from './principal/principal.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { LaredComponent } from './lared/lared.component';
     ToolbarComponent,
     ServiciosComponent,
     ContactoComponent,
-    LaredComponent
+    LaredComponent,
+    FooterComponent,
+    PrincipalComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,

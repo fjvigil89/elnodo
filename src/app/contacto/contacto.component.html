@@ -1,15 +1,19 @@
-<div class="contenido" id="servicio" style="width: 100%;">
+<div class="contenido" id="servicio" style="width: 100%; padding-top: 40px;">
 <br>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="row">
-          <div class="col-md-3" *ngFor="let item of [1,2,3,4,5,6,7]">
+          <div class="col-md-3" *ngFor="let item of upredes">
             <div class="card" style=" text-align: center; width: 15rem; margin-top: 20px; border: oldlace; ">
-              <a class="nav-link" href="#" target="_blank">
-                <img src="../assets/frank-green.jpg" alt="UPR" class="rounded-circle card-img-top">
+              <a class="nav-link" href="#" target="_blank" *ngIf="item.foto">                
+                <img src="http://sync.upr.edu.cu/api/user/{{item.username}}" alt="UPR" class="rounded-circle card-img-top">
               </a>
-              <h5 class="card-title">FRANK JOSUÉ VIGIL VEGA</h5>              
+              <a class="nav-link" href="#" target="_blank" *ngIf="!item.foto">
+                <img src="../../assets/avatar.png" alt="UPR" class="rounded-circle card-img-top">
+              </a>
+              <h5 class="card-title">{{ item.nombre }} {{ item. apellido1}} {{ item. apellido2}} </h5>              
+              
             </div>
           </div>          
         </div>

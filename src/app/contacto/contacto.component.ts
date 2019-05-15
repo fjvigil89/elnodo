@@ -8,15 +8,16 @@ import { ContactoService } from './contacto.service';
 })
 export class ContactoComponent implements OnInit {
 
-  upredes = [];
+  upredes: any = [];
   constructor( private constactoService: ContactoService ) { 
      this.constactoService.getData().subscribe(data =>{
-      console.log(data);
-      this.upredes = data;
+     console.log(data);
+     this.upredes = data;
     });
+
   }
 
-  ngOnInit() {
+  ngOnInit() {  
   }
 
 }

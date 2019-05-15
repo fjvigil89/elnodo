@@ -1,15 +1,18 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { LaredComponent } from './lared/lared.component';
+import { PrincipalComponent } from './principal/principal.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 const routes: Routes = [
-    { path: '', component: ToolbarComponent },
+    { path: '', component: PrincipalComponent },
     { path: 'contacto', component: ContactoComponent },
     { path: 'lared', component: LaredComponent },
     { path: 'servicio', component: ServiciosComponent },
+    { path: 'usuario', component: UsuarioComponent },
+
     { path: '**', pathMatch: 'full', redirectTo: ''},
 
 ];
