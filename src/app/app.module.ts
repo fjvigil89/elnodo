@@ -27,6 +27,8 @@ import { LaredComponent } from './lared/lared.component';
 import { FooterComponent } from './footer/footer.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { NoticiasComponent } from './noticias/noticias.component';
+
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
     LaredComponent,
     FooterComponent,
     PrincipalComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,5 @@ export interface Upredes{
     'username': string;
     'foto':boolean;
     'mail': string;
+    'cargo': string;
 }

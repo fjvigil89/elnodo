@@ -1,24 +1,63 @@
 <div class="contenido" id="servicio" style="width: 100%; padding-top: 40px;">
-<br>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-3" *ngFor="let item of upredes">
-            <div class="card" style=" text-align: center; width: 15rem; margin-top: 20px; border: oldlace; ">
-              <a class="nav-link" href="#" target="_blank" *ngIf="item.foto">                
-                <img src="http://sync.upr.edu.cu/api/user/{{item.username}}" alt="UPR" class="rounded-circle card-img-top">
-              </a>
-              <a class="nav-link" href="#" target="_blank" *ngIf="!item.foto">
-                <img src="../../assets/avatar.png" alt="UPR" class="rounded-circle card-img-top">
-              </a>
-              <h5 class="card-title">{{ item.nombre }} {{ item. apellido1}} {{ item. apellido2}} </h5>              
-              
+<br>  
+  <!-- Team -->
+  <section id="team" class="pb-5">
+    <div class="container">
+      <h5 class="section-title h1">Nuestro Equipo</h5>
+      <div class="row">
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let item of upredes">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p *ngIf="item.foto"><img class=" img-fluid"
+                        src="http://sync.upr.edu.cu/api/user/{{item.username}}" alt="card image">
+                    </p>
+                    <p *ngIf="!item.foto"><img class=" img-fluid"
+                        src="../../assets/avatar.png" alt="card image">
+                    </p>
+                    <h4 class="card-title">{{ item.nombre }} {{ item. apellido1}} {{ item. apellido2}}</h4>
+                    <p class="card-text">Somos un equipo joven y con muchas ganas de trabajar para la red</p>
+                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <h4 class="card-title">{{ item.cargo}}</h4>
+                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic
+                      card with image on top, title, description and button.This is basic card with image on top, title,
+                      description and button.</p>
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="mailto:{{item.mail}}">                          
+                          <i class="fa fa-at"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="social-icon text-xs-center" target="_blank" href="http://directorio.upr.edu.cu/">
+                          <i class="fa fa-address-book"></i>
+                        </a>
+                      </li>                      
+                      <li class="list-inline-item">                        
+                        <a class="social-icon text-xs-center" target="_blank" href="https://www.google.com.cu/search?q={{item.nombre}} {{ item. apellido1}} {{ item. apellido2}}">
+                          <i class="fa fa-google"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>          
+          </div>
         </div>
+        <!-- ./Team member -->
       </div>
     </div>
-  </div>
+  </section>
+  <!-- Team -->
 </div>
  

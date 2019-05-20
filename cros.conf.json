@@ -3,16 +3,10 @@
         "target": "http://sync.upr.edu.cu",
         "secure":false,
         "changeOrigin":true
-
-    },
-    "/api/*":{
-        "target": "http://localhost:8000",
-        "secure": false,
-        "changeOrigin": true
-
-    },
-    "/*": {
-        "target": "http://apiassets.upr.edu.cu",
+        
+    },   
+    "/tag/*": {
+        "target": "http://noticias.upr.edu.cu",
         "secure": false,
         "changeOrigin": true
     }
