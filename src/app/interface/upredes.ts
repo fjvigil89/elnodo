@@ -8,4 +8,5 @@ export interface Upredes{
     'foto':boolean;
     'mail': string;
     'cargo': string;
+    'gradoCientifico': any;
 }

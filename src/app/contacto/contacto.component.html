@@ -19,7 +19,10 @@
                         src="../../assets/avatar.png" alt="card image">
                     </p>
                     <h4 class="card-title">{{ item.nombre }} {{ item. apellido1}} {{ item. apellido2}}</h4>
-                    <p class="card-text">Somos un equipo joven y con muchas ganas de trabajar para la red</p>
+                    <p class="card-text">
+                      <label *ngIf="!item.gradoCientifico">Ingeniero</label>
+                      <label *ngIf="item.gradoCientifico">{{item.gradoCientifico[1]}}</label>
+                      que aumenta el carácter científico Universidad de Pinar del Río</p>
                     <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                   </div>
                 </div>
@@ -28,9 +31,10 @@
                 <div class="card">
                   <div class="card-body text-center mt-4">
                     <h4 class="card-title">{{ item.cargo}}</h4>
-                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic
-                      card with image on top, title, description and button.This is basic card with image on top, title,
-                      description and button.</p>
+                    <p class="card-text">
+                      <label *ngIf="!item.gradoCientifico">Ing.</label>
+                      <label *ngIf="item.gradoCientifico">{{item.gradoCientifico[0]}}</label>
+                       {{ item.nombre }} {{ item. apellido1}} {{ item. apellido2}}, profesor de la facultad de ciencias técnicas, radica en la Dirección de Informatización de la Universidad de Pinar del Río</p>
                     <ul class="list-inline">
                       <li class="list-inline-item">
                         <a class="social-icon text-xs-center" target="_blank" href="mailto:{{item.mail}}">                          
